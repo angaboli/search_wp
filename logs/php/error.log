@@ -1,0 +1,83 @@
+[04-Mar-2022 05:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_header() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\index.php:4
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#3 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\index.php on line 4
+[04-Mar-2022 05:33:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_header() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\index.php:4
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#3 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\index.php on line 4
+[04-Mar-2022 05:44:08 UTC] PHP Warning:  explode() expects parameter 2 to be string, object given in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php on line 186
+[04-Mar-2022 05:44:08 UTC] PHP Stack trace:
+[04-Mar-2022 05:44:08 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:0
+[04-Mar-2022 05:44:08 UTC] PHP   2. require() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:17
+[04-Mar-2022 05:44:08 UTC] PHP   3. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php:13
+[04-Mar-2022 05:44:08 UTC] PHP   4. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-load.php:50
+[04-Mar-2022 05:44:08 UTC] PHP   5. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-config.php:77
+[04-Mar-2022 05:44:08 UTC] PHP   6. include() C:\Users\angab\Local Sites\tagwalk\app\public\wp-settings.php:555
+[04-Mar-2022 05:44:08 UTC] PHP   7. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\functions.php:5
+[04-Mar-2022 05:44:08 UTC] PHP   8. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[04-Mar-2022 05:44:08 UTC] PHP   9. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[04-Mar-2022 05:44:08 UTC] PHP  10. wp_print_styles() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:307
+[04-Mar-2022 05:44:08 UTC] PHP  11. WP_Styles->do_items() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\functions.wp-styles.php:68
+[04-Mar-2022 05:44:08 UTC] PHP  12. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:126
+[04-Mar-2022 05:44:08 UTC] PHP  13. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-styles.php:371
+[04-Mar-2022 05:44:08 UTC] PHP  14. explode() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:186
+[04-Mar-2022 05:44:09 UTC] PHP Warning:  explode() expects parameter 2 to be string, object given in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php on line 186
+[04-Mar-2022 05:44:09 UTC] PHP Stack trace:
+[04-Mar-2022 05:44:09 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:0
+[04-Mar-2022 05:44:09 UTC] PHP   2. require() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:17
+[04-Mar-2022 05:44:09 UTC] PHP   3. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php:13
+[04-Mar-2022 05:44:09 UTC] PHP   4. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-load.php:50
+[04-Mar-2022 05:44:09 UTC] PHP   5. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-config.php:77
+[04-Mar-2022 05:44:09 UTC] PHP   6. include() C:\Users\angab\Local Sites\tagwalk\app\public\wp-settings.php:555
+[04-Mar-2022 05:44:09 UTC] PHP   7. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\functions.php:5
+[04-Mar-2022 05:44:09 UTC] PHP   8. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[04-Mar-2022 05:44:09 UTC] PHP   9. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[04-Mar-2022 05:44:09 UTC] PHP  10. wp_print_styles() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:307
+[04-Mar-2022 05:44:09 UTC] PHP  11. WP_Styles->do_items() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\functions.wp-styles.php:68
+[04-Mar-2022 05:44:09 UTC] PHP  12. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:126
+[04-Mar-2022 05:44:09 UTC] PHP  13. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-styles.php:371
+[04-Mar-2022 05:44:09 UTC] PHP  14. explode() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:186
+[04-Mar-2022 05:44:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:186) in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\pluggable.php on line 1355
+[04-Mar-2022 05:44:09 UTC] PHP Stack trace:
+[04-Mar-2022 05:44:09 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:0
+[04-Mar-2022 05:44:09 UTC] PHP   2. require() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:17
+[04-Mar-2022 05:44:09 UTC] PHP   3. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php:19
+[04-Mar-2022 05:44:09 UTC] PHP   4. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php:45
+[04-Mar-2022 05:44:09 UTC] PHP   5. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[04-Mar-2022 05:44:09 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[04-Mar-2022 05:44:09 UTC] PHP   7. do_favicon() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:307
+[04-Mar-2022 05:44:09 UTC] PHP   8. wp_redirect() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\functions.php:1713
+[04-Mar-2022 05:44:09 UTC] PHP   9. header() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\pluggable.php:1355
+[04-Mar-2022 05:44:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:186) in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\pluggable.php on line 1358
+[04-Mar-2022 05:44:09 UTC] PHP Stack trace:
+[04-Mar-2022 05:44:09 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:0
+[04-Mar-2022 05:44:09 UTC] PHP   2. require() C:\Users\angab\Local Sites\tagwalk\app\public\index.php:17
+[04-Mar-2022 05:44:09 UTC] PHP   3. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php:19
+[04-Mar-2022 05:44:09 UTC] PHP   4. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php:45
+[04-Mar-2022 05:44:09 UTC] PHP   5. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[04-Mar-2022 05:44:09 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[04-Mar-2022 05:44:09 UTC] PHP   7. do_favicon() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:307
+[04-Mar-2022 05:44:09 UTC] PHP   8. wp_redirect() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\functions.php:1713
+[04-Mar-2022 05:44:09 UTC] PHP   9. header() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\pluggable.php:1358
+[04-Mar-2022 05:44:36 UTC] PHP Warning:  explode() expects parameter 2 to be string, object given in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php on line 186
+[04-Mar-2022 05:44:36 UTC] PHP Stack trace:
+[04-Mar-2022 05:44:36 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\admin-ajax.php:0
+[04-Mar-2022 05:44:36 UTC] PHP   2. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\admin-ajax.php:22
+[04-Mar-2022 05:44:36 UTC] PHP   3. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-load.php:50
+[04-Mar-2022 05:44:36 UTC] PHP   4. require_once() C:\Users\angab\Local Sites\tagwalk\app\public\wp-config.php:77
+[04-Mar-2022 05:44:36 UTC] PHP   5. include() C:\Users\angab\Local Sites\tagwalk\app\public\wp-settings.php:555
+[04-Mar-2022 05:44:36 UTC] PHP   6. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\functions.php:5
+[04-Mar-2022 05:44:36 UTC] PHP   7. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[04-Mar-2022 05:44:36 UTC] PHP   8. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[04-Mar-2022 05:44:36 UTC] PHP   9. wp_print_styles() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:307
+[04-Mar-2022 05:44:36 UTC] PHP  10. WP_Styles->do_items() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\functions.wp-styles.php:68
+[04-Mar-2022 05:44:36 UTC] PHP  11. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:126
+[04-Mar-2022 05:44:36 UTC] PHP  12. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-styles.php:371
+[04-Mar-2022 05:44:36 UTC] PHP  13. explode() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:186
