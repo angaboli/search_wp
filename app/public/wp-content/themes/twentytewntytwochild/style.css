@@ -11,6 +11,9 @@ Text Domain: twentytwentytwo-child
 
 
 div .container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
     background-color: red !important;
     color: aqua !important;
 }
