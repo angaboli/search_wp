@@ -1,3 +1,11 @@
+<?php
+
+/**
+ * Template Name:  Search page
+ */
+?>
+
+
 <?php get_header() ?>
 
 <?php

@@ -42,3 +42,7 @@ e.g. `apply_filters('nav_menu_link_attributes', $atts, $args, $depth); `
 Add class using a customized function to add a class on exting one.
 
 
+Image size
+----------
+add_image_size() -> theme support
+

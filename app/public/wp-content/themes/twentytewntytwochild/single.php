@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name:  Single post
+ */
+?>
 
 <?php get_header( ) ?>
 
