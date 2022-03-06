@@ -10,10 +10,11 @@ Text Domain: twentytwentytwo-child
 */
 
 
-div .container {
+div.container {
+    width: 60%;
     text-align: center;
     margin: 0 auto;
     padding: 15px;
-    background-color: red !important;
+    background-color: grey !important;
     color: aqua !important;
 }

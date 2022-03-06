@@ -10,7 +10,10 @@
 <body>
     <div class="container">
         <a href="/"><h1>Tagwalk</h1></a>
+        <div class="search">
+            <?= get_search_form() ?>
 
-    <?= get_search_form() ?>
+        </div>
+
 
     
