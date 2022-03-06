@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="container">
+        <a href="/"><h1>Tagwalk</h1></a>
 
-    
+    <?= get_search_form() ?>
+
     

@@ -27,3 +27,4 @@ function krystalpro_child_load_scripts() {
 add_action('after_setup_theme', 'tagwalk_supports');
 add_action('wp_enqueue_scripts', 'tagwalk_register_assets');
 add_filter( 'document_title_separator', 'tagwalk_title_separator' );
+apply_filters( 'get_search_form', $form );
