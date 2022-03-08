@@ -22,7 +22,10 @@ function tagwalk_media_post(){
         'public' => true,
         'menu_position' => 3,
         'menu_icon' => 'dashicons-images-alt2',
-        'supports' => ['title', 'editor', 'thumbnail']
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'show_in_rest' => true,
+        'taxonomies' => ['category', 'tag'],
+        'has_archive' => true,
     ]);
 }
 
