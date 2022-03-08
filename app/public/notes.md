@@ -46,3 +46,8 @@ Image size
 ----------
 add_image_size() -> theme support
 
+
+Register customized post
+------------------------
+https://www.technouz.com/3941/how-to-create-a-gallery-custom-post-type-on-wordpress/
+

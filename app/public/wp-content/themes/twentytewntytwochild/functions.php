@@ -16,7 +16,17 @@ function tagwalk_title_separator (){
 
 }
 
+function tagwalk_media_post(){
+    register_post_type('gallery', [
+        'label' => 'Gallery',
+        'public' => true,
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-images-alt2',
+        'supports' => ['title', 'editor', 'thumbnail']
+    ]);
+}
 
+add_action('init', 'tagwalk_media_post');
 add_action('after_setup_theme', 'tagwalk_supports');
 add_action('wp_enqueue_scripts', 'tagwalk_register_assets');
 add_filter( 'document_title_separator', 'tagwalk_title_separator' );
