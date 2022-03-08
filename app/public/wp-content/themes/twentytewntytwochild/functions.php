@@ -29,8 +29,13 @@ function tagwalk_media_post(){
     ]);
 }
 
+function tagwalk_custom_box(){
+
+}
+
 add_action('init', 'tagwalk_media_post');
 add_action('after_setup_theme', 'tagwalk_supports');
 add_action('wp_enqueue_scripts', 'tagwalk_register_assets');
+add_action('add_meta_boxes', 'tagwalk_custom_box');
 add_filter( 'document_title_separator', 'tagwalk_title_separator' );
 apply_filters( 'get_search_form', $form );
