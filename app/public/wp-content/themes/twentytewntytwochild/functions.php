@@ -17,14 +17,61 @@ function tagwalk_title_separator (){
 }
 
 function tagwalk_media_post(){
+
+    $taxonomies = array(
+        array(
+          'slug' => 'categorie',
+          'singular_name' => 'Categorie',
+          'plural_name' => 'Categories',
+          'post_type' => 'patrimoine',
+          'rewrite' => array('slug' => 'categorie'),
+        ),
+        array(
+          'slug' => 'tendance',
+          'singular_name' => 'Tendance',
+          'plural_name' => 'Tendances',
+          'post_type' => 'patrimoine',
+          'rewrite' => array('slug' => 'tendance'),
+        ),
+      );
+      foreach ($taxonomies as $taxonomie) {
+        $labels = array(
+          'name' => _x($taxonomie['plural_name'], 'taxonomy general name', 'textdomain'),
+          'singular_name' => _x($taxonomie['singular_name'], 'taxonomy singular name', 'textdomain'),
+          'plural_name' => __($taxonomie['plural_name'], 'taxonomy plural name', 'textdomain'),
+          'search_items' => __('Recherche des ' . $taxonomie['plural_name'], 'textdomain'),
+          'all_items' => __('Tous les ' . $taxonomie['plural_name'], 'textdomain'),
+          'edit_item' => __('Modifier une ' . $taxonomie['singular_name'], 'textdomain'),
+          'update_item' => __('Mettre à jour', 'textdomain'),
+          'add_new_item' => __('Ajouter une ' . $taxonomie['singule_name'], 'textdomain'),
+          'new_item_name' => __('Nouveau un nom', 'textdomain'),
+          'menu_name' => __($taxonomie['plural_name'], 'textdomain'),
+        );
+        $rewrite = isset($taxonomie['rewrite']) ? $taxonomie['rewrite'] : array('slug' => $taxonomie['slug']);
+        $hierarchical = isset($taxonomie['hierarchical']) ? $taxonomie['hierarchical'] : true;
+    
+        register_taxonomy(
+          $taxonomie['slug'],
+          $taxonomie['post_type'],
+          array(
+            'hierarchical' => $hierarchical,
+            'labels' => $labels,
+            'show_in_rest' => true,
+            'show_ui' => true,
+            'query_var' => true,
+            'rerwite' => $rewrite,
+          )
+        );
+      }
+
     register_post_type('gallery', [
         'label' => 'Gallery',
         'public' => true,
-        'menu_position' => 3,
+        'menu_position' => 4,
         'menu_icon' => 'dashicons-images-alt2',
         'supports' => ['title', 'editor', 'thumbnail'],
         'show_in_rest' => true,
-        'taxonomies' => ['category', 'tag'],
+        'taxonomies' => ['categorie', 'tendance'],
         'has_archive' => true,
     ]);
 }

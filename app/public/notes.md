@@ -51,3 +51,5 @@ Register customized post
 ------------------------
 https://www.technouz.com/3941/how-to-create-a-gallery-custom-post-type-on-wordpress/
 
+https://rudrastyh.com/wordpress/ajax-post-filters.html
+
