@@ -81,3 +81,57 @@ Stack trace:
 [04-Mar-2022 05:44:36 UTC] PHP  11. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:126
 [04-Mar-2022 05:44:36 UTC] PHP  12. WP_Styles->all_deps() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-styles.php:371
 [04-Mar-2022 05:44:36 UTC] PHP  13. explode() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class.wp-dependencies.php:186
+[13-Mar-2022 21:36:56 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php:18
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', true, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(1): get_header()
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php on line 18
+[13-Mar-2022 21:36:56 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php:18
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', true, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(1): get_header()
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php on line 18
+[13-Mar-2022 21:37:05 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php:18
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', true, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\index.php(2): get_header()
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php on line 18
+[13-Mar-2022 21:38:27 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php:18
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', true, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\index.php(2): get_header()
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\header.php on line 18
+[13-Mar-2022 22:00:40 UTC] PHP Fatal error:  Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\script-loader.php:2414
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\script-loader.php(2444): wp_should_load_separate_core_block_assets()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php(307): wp_enqueue_registered_block_scripts_and_styles('')
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\script-loader.php(2301): do_action('enqueue_block_a...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php(307): wp_common_block_scripts_and_styles('')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#7 in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\script-loader.php on line 2414

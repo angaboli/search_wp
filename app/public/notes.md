@@ -53,3 +53,5 @@ https://www.technouz.com/3941/how-to-create-a-gallery-custom-post-type-on-wordpr
 
 https://rudrastyh.com/wordpress/ajax-post-filters.html
 
+https://stackoverflow.com/questions/45968523/display-images-from-wordpress-post-in-a-modal
+

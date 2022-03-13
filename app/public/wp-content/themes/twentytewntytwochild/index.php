@@ -1,7 +1,15 @@
 
     <?php get_header( ) ?>
 
-    <?php if (have_posts()): ?>
+    <?php
+            $args = array(
+                'post_type' => 'gallery',
+                'order'    => 'ASC'
+            );
+
+            $the_query = new WP_Query($args);
+
+     if (have_posts()): ?>
         <ul>
             <?php while(have_posts()): the_post();  ?>
                 <?php the_post_thumbnail('card-header') ?>

@@ -14,6 +14,10 @@
             <?= get_search_form() ?>
 
         </div>
+        <div class="menu">
+            <a href="<?= get_post_type_archive_link('gallery'); ?>">Gallery</a>
+            
+        </div>
 
 
     
