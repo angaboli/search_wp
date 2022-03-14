@@ -8,12 +8,33 @@ Text Domain: twentytwentytwo-child
 
 */
 
+body{
+    background-color: #141C34;
+    color: #5396e7 ;
+    ;
+}
+a{
+    color: aqua;
+}
 
 div.container {
     width: 60%;
-    text-align: center;
+    justify-content: center;
     margin: 0 auto;
-    padding: 15px;
-    background-color: grey !important;
-    color: aqua !important;
+    padding: 25px;
+    background-color: #1C1C3C ;
+    color: #5396e7 !important;
+}
+
+.main{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    color: #fff;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.card{
+    margin: 20px;
 }

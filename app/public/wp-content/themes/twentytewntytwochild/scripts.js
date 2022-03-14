@@ -1,27 +1,42 @@
 /**
- * Open article in modal
+ * Open post in modal
  */
 
-// MODAL IMAGE
-function openModal(URL, TITLE, ID, CAPTION){
-    var modal = document.getElementById('myModal')
-    var modalImg = document.getElementById("modal-img")
-    var caption = document.getElementById("caption")
-    var captionH3 = caption.getElementsByTagName('h3')[0]
-    var captionA = caption.getElementsByTagName('a')[0]
-    var captionB = caption.getElementsByTagName('p')[0]
-    var span = document.getElementsByClassName("close")[0]
-  
-    var newTitle = encodeURIComponent(TITLE.trim())
-    modal.style.display = "flex"
-    captionH3.innerHTML = TITLE
-    modalImg.src = URL
-    captionB.innerHTML = CAPTION
-  
-    captionA.href = "mailto:josefineklundmail@gmail.com?Subject=" + newTitle
-    captionA.innerHTML = "Contact me"
-  
-    span.onclick = function() {
-      modal.style.display = "none"
-    }
-  }
+
+ let modal = null;
+
+ const openModal = function(e) {
+     e.preventDefault()
+     console.log(e.target);
+     const target = e.target.parentNode
+     var targetHref = target.getAttribute('href')
+     console.log(targetHref)
+     target.style.display = null
+     target.removeAttribute('aria-hidden')
+     target.setAttribute('aria-modal', 'true')
+     modal = target
+     modal.addEventListener('click', closeModal)
+         //console.log('modal' + modal)
+     modal.querySelector('.js-modal-close').addEventListener('click', closeModal)
+     modal.querySelector('.js-modal-stop').addEventListener('click', stopPropagation)
+ 
+ }
+ 
+ const closeModal = function(e) {
+     if (modal === null) return
+     e.preventDefault()
+     modal.style.display = 'none'
+     target.removeAttribute('aria-hidden')
+     target.setAttribute('aria-modal', 'true')
+     modal = target
+     modal.addEventListener('click', closeModal)
+     modal.querySelector('.js-modal-close').removeEventListener('click', closeModal)
+     modal.querySelector('.js-modal-stop').removeEventListener('click', stopPropagation)
+     modal = null
+ }
+ 
+ const stopPropagation = function(e) {
+     e.stopPropagation()
+ }
+ 
+ document.querySelector('js-modal').addEventListener('click', openModal)
