@@ -11,7 +11,7 @@ function tagwalk_register_assets()
 {
   wp_register_style('tagwalk', trailingslashit(get_stylesheet_directory_uri()) . 'style.css', false, '1.0', 'screen');
   wp_enqueue_style('tagwalk');
-  wp_register_script('tagwalk', trailingslashit(get_stylesheet_directory_uri()) . 'scripts.js');
+  wp_register_script('tagwalk', trailingslashit(get_stylesheet_directory_uri()) . 'scripts.js', false, '1.0', 'screen');
   wp_enqueue_script('tagwalk');
 }
 

@@ -4,10 +4,20 @@
 
 
     <?php
+
+    $taxonomy_slug = esc_html(get_query_var('taxonomy'));
+    $term_slug = esc_html(get_query_var('term'));
     $args = array(
         'post_type' => 'gallery',
         'order'    => 'ASC',
         'posts_per_page' => 9,
+        'tax_query' => [
+            [
+              'taxonomy' => $taxonomy_slug,
+              'field' => 'slug',
+              'terms' => $term_slug,
+            ]
+          ],
     );
 
     $the_query = new WP_Query($args);
@@ -17,6 +27,7 @@
         <?php while ($the_query->have_posts()) :
 
             $the_query->the_post();
+
 
             get_template_part('parts/card');
 
