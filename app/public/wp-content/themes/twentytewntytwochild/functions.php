@@ -90,7 +90,7 @@ function tagwalk_custom_box()
  *
  * @return void
  */
-function debug()
+function dump()
 {
   echo '<pre>';
 
@@ -111,3 +111,34 @@ add_action('wp_enqueue_scripts', 'tagwalk_register_assets');
 add_action('add_meta_boxes', 'tagwalk_custom_box');
 add_filter('document_title_separator', 'tagwalk_title_separator');
 apply_filters('get_search_form', $form);
+
+
+/**
+ * Import data form .csv file and map them in database 
+ */
+function get_csv_data()
+{
+
+  $handle = fopen(get_stylesheet_directory_uri() . "/inc/import.csv", "r");
+
+  while (($data = fgetcsv($handle, 1000, ',')) !== FALSE) {
+    //dump($data);
+    $tag_list = explode(', ', trim($data[2]));
+    $title = $tag_list[0];
+    $p_post = array(
+      'post_title' => $title,
+      'tax_input' => [
+        'enseigne' => $data[0],
+        'campagne' => $data[3],
+        'categorie' => $data[4],
+        'tendance' => $data[5],
+        'etiquette' => $tag_list,
+      ],
+      'post_type' => 'patrimoine'
+    );
+    dump($p_post);
+
+    //wp_insert_post( $p_post );
+
+  }
+}

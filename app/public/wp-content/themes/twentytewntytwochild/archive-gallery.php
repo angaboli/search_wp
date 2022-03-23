@@ -1,9 +1,14 @@
-<?php get_header() ?>
+<?php get_header() ;
+$data = get_csv_data();
+dump($data);
+
+?>
 
 <main class="main">
 
 
     <?php
+    
     $args = array(
         'post_type' => 'gallery',
         'order'    => 'ASC',

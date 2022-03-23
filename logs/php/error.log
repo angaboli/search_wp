@@ -1405,3 +1405,69 @@ Stack trace:
 #5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
 #6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
 #7 { in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 22
+[16-Mar-2022 22:09:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php:19
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', false, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(24): get_template_part('parts/card')
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
+[16-Mar-2022 22:11:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php:19
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', false, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(26): get_template_part('parts/card')
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
+[16-Mar-2022 22:16:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php:19
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', false, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(26): get_template_part('parts/card')
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
+[16-Mar-2022 22:33:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php:19
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', false, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(26): get_template_part('parts/card')
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
+[16-Mar-2022 22:35:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php:19
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', false, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(26): get_template_part('parts/card')
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
+[16-Mar-2022 23:15:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php:19
+Stack trace:
+#0 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template.php(716): load_template('C:\\Users\\angab\\...', false, Array)
+#2 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\archive-gallery.php(26): get_template_part('parts/card')
+#4 C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\angab\\...')
+#5 C:\Users\angab\Local Sites\tagwalk\app\public\wp-blog-header.php(19): require_once('C:\\Users\\angab\\...')
+#6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
+#7 {main}
+  thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
