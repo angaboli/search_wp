@@ -16,7 +16,6 @@
 
             <span class="js-modal-close">&times;</span>
             <div class="modal-box">
-                <?= debug()?>
                 <img src="<?= the_post_thumbnail_url('full') ?>" >
             </div>
             <div class="caption-text">
