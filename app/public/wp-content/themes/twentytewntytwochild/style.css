@@ -22,7 +22,7 @@ header{
 }
 div.container {
     width: 60%;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 25px;
     background-color: #1C1C3C ;
@@ -35,7 +35,7 @@ div.container {
     grid-template-columns: 30% 30% 30%;
     color: #fff;
     margin: 50px auto;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card{

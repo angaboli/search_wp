@@ -1482,3 +1482,23 @@ Stack trace:
 #6 C:\Users\angab\Local Sites\tagwalk\app\public\index.php(17): require('C:\\Users\\angab\\...')
 #7 {main}
   thrown in C:\Users\angab\Local Sites\tagwalk\app\public\wp-content\themes\twentytewntytwochild\parts\card.php on line 19
+[06-Apr-2022 05:00:21 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\update.php on line 413
+[06-Apr-2022 05:00:21 UTC] PHP Stack trace:
+[06-Apr-2022 05:00:21 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\update-core.php:0
+[06-Apr-2022 05:00:21 UTC] PHP   2. do_core_upgrade() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\update-core.php:1116
+[06-Apr-2022 05:00:21 UTC] PHP   3. Core_Upgrader->upgrade() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\update-core.php:887
+[06-Apr-2022 05:00:21 UTC] PHP   4. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\includes\class-core-upgrader.php:219
+[06-Apr-2022 05:00:21 UTC] PHP   5. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[06-Apr-2022 05:00:21 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[06-Apr-2022 05:00:21 UTC] PHP   7. wp_update_plugins() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:305
+[06-Apr-2022 05:00:21 UTC] PHP   8. trigger_error() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\update.php:413
+[06-Apr-2022 05:00:27 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\update.php on line 693
+[06-Apr-2022 05:00:27 UTC] PHP Stack trace:
+[06-Apr-2022 05:00:27 UTC] PHP   1. {main}() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\update-core.php:0
+[06-Apr-2022 05:00:27 UTC] PHP   2. do_core_upgrade() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\update-core.php:1116
+[06-Apr-2022 05:00:27 UTC] PHP   3. Core_Upgrader->upgrade() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\update-core.php:887
+[06-Apr-2022 05:00:27 UTC] PHP   4. do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-admin\includes\class-core-upgrader.php:219
+[06-Apr-2022 05:00:27 UTC] PHP   5. WP_Hook->do_action() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\plugin.php:474
+[06-Apr-2022 05:00:27 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:331
+[06-Apr-2022 05:00:27 UTC] PHP   7. wp_update_themes() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\class-wp-hook.php:305
+[06-Apr-2022 05:00:27 UTC] PHP   8. trigger_error() C:\Users\angab\Local Sites\tagwalk\app\public\wp-includes\update.php:693

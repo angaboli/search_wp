@@ -3,7 +3,7 @@
 function tagwalk_supports()
 {
   add_theme_support('title-tag');
-  add_image_size('card-header', 350, 200, true); // args are : class, width, height, crop
+  add_image_size('card-header', 280, 200, true); // args are : class, width, height, crop
 
 }
 
