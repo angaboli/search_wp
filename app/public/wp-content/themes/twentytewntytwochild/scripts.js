@@ -4,21 +4,26 @@
 
 let modal = null;
 
-console.log('muraho yemwe?')
+
 const openModal = function (e) {
   e.preventDefault()
-  console.log(e.target);
-  const target = e.target.parentNode
-  var targetHref = target.getAttribute('href')
-  console.log(targetHref)
-  target.style.display = null
+  const target = e.target
+  modal = target.parentNode
+  //console.log(modal);
+  var targetHref = modal.getAttribute('href')
+  content = document.getElementById('myModal')
+  content.style.display = 'flex'
   target.removeAttribute('aria-hidden')
   target.setAttribute('aria-modal', 'true')
-  modal = target
-  modal.addEventListener('click', closeModal)
+  var img = content.querySelector('.img')
+  var imgUrl = modal.getAttribute('data-url');
+  img.setAttribute('src', imgUrl)
+  console.log(img)
+  content = target
+  content.addEventListener('click', closeModal)
   //console.log('modal' + modal)
-  //modal.querySelector('.js-modal-close').addEventListener('click', closeModal)
-  //modal.querySelector('.js-modal-stop').addEventListener('click', stopPropagation)
+  content.querySelector('.js-modal-close').addEventListener('click', closeModal)
+  content.querySelector('.js-modal-stop').addEventListener('click', stopPropagation)
 
 }
 
