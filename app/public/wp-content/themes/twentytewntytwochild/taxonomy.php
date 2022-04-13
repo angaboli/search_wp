@@ -8,7 +8,7 @@
     $taxonomy_slug = esc_html(get_query_var('taxonomy'));
     $term_slug = esc_html(get_query_var('term'));
     $args = array(
-        'post_type' => 'gallery',
+        'post_type' => 'portfolio',
         'order'    => 'ASC',
         'posts_per_page' => 9,
         'tax_query' => [

@@ -18,26 +18,27 @@ const openModal = function (e) {
   var img = content.querySelector('.img')
   var imgUrl = modal.getAttribute('data-url');
   img.setAttribute('src', imgUrl)
-  console.log(img)
-  content = target
+  //console.log(img)
+  //content = target
   content.addEventListener('click', closeModal)
   //console.log('modal' + modal)
-  content.querySelector('.js-modal-close').addEventListener('click', closeModal)
-  content.querySelector('.js-modal-stop').addEventListener('click', stopPropagation)
+  close = document.getElementById('myModal').querySelector('.js-modal-close')
+  close.addEventListener('click', closeModal)
+  //content.querySelector('.js-modal-stop').addEventListener('click', stopPropagation)
 
 }
 
 const closeModal = function (e) {
   if (modal === null) return
   e.preventDefault()
-  modal.style.display = 'none'
+  //console.log(content)
+  content.style.display = 'none'
   //target.removeAttribute('aria-hidden')
-  target.setAttribute('aria-modal', 'true')
-  modal = target
-  modal.addEventListener('click', closeModal)
-  modal.querySelector('.js-modal-close').removeEventListener('click', closeModal)
-  modal.querySelector('.js-modal-stop').removeEventListener('click', stopPropagation)
-  modal = null
+  content.setAttribute('aria-modal', 'true')
+  content.addEventListener('click', closeModal)
+  content.querySelector('.js-modal-close').removeEventListener('click', closeModal)
+  //modal.querySelector('.js-modal-stop').removeEventListener('click', stopPropagation)
+  //modal = null
 }
 
 const stopPropagation = function (e) {

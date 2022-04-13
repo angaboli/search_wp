@@ -33,25 +33,26 @@ function tagwalk_media_post()
       'rewrite' => array('slug' => 'categorie'),
     ),
     array(
-      'slug' => 'tendance',
-      'singular_name' => 'Tendance',
-      'plural_name' => 'Tendances',
+      'slug' => 'etiquette',
+      'singular_name' => 'Etiquette',
+      'plural_name' => 'Etiquettes',
       'post_type' => 'patrimoine',
-      'rewrite' => array('slug' => 'tendance'),
+      'rewrite' => array('slug' => 'etiquette'),
+      'hierarchical' => false
     ),
   );
   foreach ($taxonomies as $taxonomie) {
     $labels = array(
-      'name' => _x($taxonomie['plural_name'], 'taxonomy general name', 'textdomain'),
-      'singular_name' => _x($taxonomie['singular_name'], 'taxonomy singular name', 'textdomain'),
-      'plural_name' => __($taxonomie['plural_name'], 'taxonomy plural name', 'textdomain'),
-      'search_items' => __('Recherche des ' . $taxonomie['plural_name'], 'textdomain'),
-      'all_items' => __('Tous les ' . $taxonomie['plural_name'], 'textdomain'),
-      'edit_item' => __('Modifier une ' . $taxonomie['singular_name'], 'textdomain'),
-      'update_item' => __('Mettre à jour', 'textdomain'),
-      'add_new_item' => __('Ajouter une ' . $taxonomie['singule_name'], 'textdomain'),
-      'new_item_name' => __('Nouveau un nom', 'textdomain'),
-      'menu_name' => __($taxonomie['plural_name'], 'textdomain'),
+      'name' => _x($taxonomie['plural_name'], 'taxonomy general name', 'portfolio'),
+      'singular_name' => _x($taxonomie['singular_name'], 'taxonomy singular name', 'portfolio'),
+      'plural_name' => __($taxonomie['plural_name'], 'taxonomy plural name', 'portfolio'),
+      'search_items' => __('Recherche des ' . $taxonomie['plural_name'], 'portfolio'),
+      'all_items' => __('Tous les ' . $taxonomie['plural_name'], 'portfolio'),
+      'edit_item' => __('Modifier une ' . $taxonomie['singular_name'], 'portfolio'),
+      'update_item' => __('Mettre à jour', 'portfolio'),
+      'add_new_item' => __('Ajouter une ' . $taxonomie['singule_name'], 'portfolio'),
+      'new_item_name' => __('Nouveau un nom', 'portfolio'),
+      'menu_name' => __($taxonomie['plural_name'], 'portfolio'),
     );
     $rewrite = isset($taxonomie['rewrite']) ? $taxonomie['rewrite'] : array('slug' => $taxonomie['slug']);
     $hierarchical = isset($taxonomie['hierarchical']) ? $taxonomie['hierarchical'] : true;
@@ -70,14 +71,14 @@ function tagwalk_media_post()
     );
   }
 
-  register_post_type('gallery', [
-    'label' => 'Gallery',
+  register_post_type('portfolio', [
+    'label' => 'Portfolio',
     'public' => true,
     'menu_position' => 4,
     'menu_icon' => 'dashicons-images-alt2',
     'supports' => ['title', 'editor', 'thumbnail'],
     'show_in_rest' => true,
-    'taxonomies' => ['categorie', 'tendance'],
+    'taxonomies' => ['categorie', 'etiquette'],
     'has_archive' => true,
   ]);
 }
@@ -132,7 +133,7 @@ function get_csv_data()
         'enseigne' => $data[0],
         'campagne' => $data[3],
         'categorie' => $data[4],
-        'tendance' => $data[5],
+        'etiquette' => $data[5],
         'etiquette' => $tag_list,
       ],
       'post_type' => 'patrimoine'
@@ -143,3 +144,33 @@ function get_csv_data()
 
   }
 }
+
+// load more function by ajax
+add_action('wp_ajax_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+add_action('wp_ajax_nopriv_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+
+function load_posts_by_ajax_callback(){
+  check_ajax_referer('load_more_posts', 'security');
+  $paged= $_POST['page'];
+
+  $args = array(
+
+    'post_type' => 'portfolio',
+    'post_status' => 'publish',
+    'posts_per_page' => 4,
+    'paged' =>$paged,
+  );
+  $my_posts = new WP_Query($args);
+
+  if ($my_posts-> have_posts()) { 
+
+      while($my_posts-> have_posts()){
+        $my_posts-> the_post();
+         get_template_part('parts/card');
+    }
+  }
+
+wp_die();
+
+}
+

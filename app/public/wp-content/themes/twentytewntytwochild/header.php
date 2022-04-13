@@ -21,39 +21,30 @@
 
             </div>
             <div class="menu">
-                <a href="<?= get_post_type_archive_link('gallery'); ?>">Gallery</a>
+                <a href="<?= get_post_type_archive_link('portfolio'); ?>">Portfolio</a>
 
             </div>
             <div class="flex-row">
-                <form action="#" method="POST" id="avis_filters" class="flex-row">
-                    <?php
 
-                    $term = get_queried_object();
-                    $cp = get_the_ID();
-                    $custom_taxo = get_object_taxonomies($cp);
-                    if($custom_taxo) :
-                        foreach ($custom_taxo as $tax) {
-                            # code...
-                            $list = wp_list_categories(array(
-                                'orderby'  => 'name',
-                                'taxonomy' => $tax,
-                                'parent'   => $term->term_id,
-                                'title_li' => '',
-                                'depth'    => 1,
-                                'echo'     => false,
-                            ));
-                            //dump($list);
-                            if ($list) {
-                                echo "<ul>$list</ul>";
-                            }else{
-                                $term;
-                            }
-                        }
+                <?php
+                if ($terms = get_terms(array('taxonomy' => 'categorie', 'hide_empty' => true))) :
+                    foreach ($terms as $term) :
+                        echo '<input type="radio" id="' . $term->term_id . '" value="' . $term->term_id . '" name="category_avis_filters" class="avis_filters"/><label for="' . $term->term_id . '">' . $term->name . '</label>';
+                    endforeach;
                 endif;
-
-                    ?>
-                    <!-- required hidden field for admin-ajax.php -->
-                    <input type="hidden" name="action" value="ccavisfilter" />
-                </form>
+                ?>
             </div>
-        </header>
+            <div class="flex-row">
+
+                <input type="radio" value="all_etiquette" id="all_etiquette" class="avis_filter" name="etiquette_filters"><label for="all_etiquette">Toutes</label>
+
+                <?php
+                if ($terms = get_terms(array('taxonomy' => 'etiquette', 'hide_empty' => true))) :
+                    foreach ($terms as $term) :
+                        echo '<input type="radio" id="' . $term->term_id . '" value="' . $term->term_id . '" name="etiquette_filters" class=avis_filters"/><label for="' . $term->term_id . '">' . $term->name . '</label>';
+                    endforeach;
+                endif; ?>
+            </div>
+
+    
+    </header>

@@ -5,7 +5,7 @@
 
     <?php
     $args = array(
-        'post_type' => 'gallery',
+        'post_type' => 'portfolio',
         'order'    => 'ASC'
     );
 
