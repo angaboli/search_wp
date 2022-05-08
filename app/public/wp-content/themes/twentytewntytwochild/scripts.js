@@ -49,6 +49,27 @@ document.querySelectorAll('.js-modal').forEach(a => {
   a.addEventListener('click', openModal)
 });
 
+
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' || e.key === "Esc") {
+      closeModal(e)
+  }
+})
 /**----------------------------------------------------------------------------------
  * ----------------------------------------------------------------------------------
  * */
+
+ $(document).ready( function() {
+
+  $('.main').isotope({
+   itemSelector: '.card',
+  });
+  
+  // filter items on button click
+  $('.filters').on( 'click', 'li', function() {
+   var filterValue = $(this).attr('data-filter');
+   $('.grid').isotope({ filter: filterValue });
+   $('.filters input').removeClass('active');
+   $(this).addClass('active');
+  });
+     })

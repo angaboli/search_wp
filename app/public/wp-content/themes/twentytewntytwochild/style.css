@@ -7,13 +7,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentytwentytwo-child
 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
 html, body{
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Maven Pro', sans-serif;
     /* font-family: 'Josefin Slab', serif; */
     background-color: #141C34;
     color: #5396e7 ;

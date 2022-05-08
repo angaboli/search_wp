@@ -24,27 +24,31 @@
                 <a href="<?= get_post_type_archive_link('portfolio'); ?>">Portfolio</a>
 
             </div>
-            <div class="flex-row">
+            <div class="filters">
 
-                <?php
-                if ($terms = get_terms(array('taxonomy' => 'categorie', 'hide_empty' => true))) :
-                    foreach ($terms as $term) :
-                        echo '<input type="radio" id="' . $term->term_id . '" value="' . $term->term_id . '" name="category_avis_filters" class="avis_filters"/><label for="' . $term->term_id . '">' . $term->name . '</label>';
-                    endforeach;
-                endif;
-                ?>
+                <div class="flex-row">
+                    <h3>Categories</h3>
+                    <?php
+                    if ($terms = get_terms(array('taxonomy' => 'categorie', 'hide_empty' => true))) :
+                        foreach ($terms as $term) :
+                            echo '<input type="checkbox" id="' . $term->term_id . '" value="' . $term->term_id . '" name="category_avis_filters" class="avis_filters"/><label for="' . $term->term_id . '">' . $term->name . '</label>';
+                        endforeach;
+                    endif;
+                    ?>
+                </div>
+                <div class="flex-row">
+                    <h3>Etiquettes</h3>
+
+                    <input type="radio" value="all_etiquette" id="all_etiquette" class="avis_filter" name="etiquette_filters"><label for="all_etiquette">Toutes</label>
+
+                    <?php
+                    if ($terms = get_terms(array('taxonomy' => 'etiquette', 'hide_empty' => true))) :
+                        foreach ($terms as $term) :
+                            echo '<input type="checkbox" id="' . $term->term_id . '" value="' . $term->term_id . '" name="etiquette_filters" class=avis_filters"/><label for="' . $term->term_id . '">' . $term->name . '</label>';
+                        endforeach;
+                    endif; ?>
+                </div>
             </div>
-            <div class="flex-row">
 
-                <input type="radio" value="all_etiquette" id="all_etiquette" class="avis_filter" name="etiquette_filters"><label for="all_etiquette">Toutes</label>
 
-                <?php
-                if ($terms = get_terms(array('taxonomy' => 'etiquette', 'hide_empty' => true))) :
-                    foreach ($terms as $term) :
-                        echo '<input type="radio" id="' . $term->term_id . '" value="' . $term->term_id . '" name="etiquette_filters" class=avis_filters"/><label for="' . $term->term_id . '">' . $term->name . '</label>';
-                    endforeach;
-                endif; ?>
-            </div>
-
-    
-    </header>
+        </header>
